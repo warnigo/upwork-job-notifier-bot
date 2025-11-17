@@ -1,7 +1,7 @@
 {
   "name": "upwork-job-notifier-bot",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A Telegram bot that monitors Upwork for newly posted jobs and sends real-time alerts based on your custom keywords and filters. Helps freelancers catch fresh opportunities instantly without manually checking the platform.",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
@@ -21,8 +21,12 @@
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/schedule": "^4.1.0",
+    "cheerio": "^1.0.0",
+    "grammy": "^1.25.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
@@ -32,6 +36,7 @@
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
+    "@types/cheerio": "^0.22.35",
     "@types/express": "^5.0.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.10.7",
